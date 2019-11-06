@@ -5,53 +5,39 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta charset="utf-8">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function() 
-		{
-   			$(".minus").on("click", function(){
-				alert("THis is Minus");
-			});
-
-			$(".plus").on("click", function(){
-				alert("This is Plus");
-			});
-		});
-
-
-	</script>
 </head>
 <body>
 	<div class="container text-center">
 		<h1> Shopping Cart </h1>
 
 		<div class="main text-center">
-			<div class="flex-container">
-				<div class="item1">
-					<img src="img/dell.jpg" alt="dell_computer"> 
-					QTY
-					<input class="minus" type="button" value="-" > 
-					<input class="plus" type="button" value="+"> 
-					<div>
-						This is the pricing
-					</div>
-				</div>
-			</div>
+			<table class="table-hover">
+				<tr>
+					<td><img src="img/dell.jpg" alt="dell_computer"> </td>
+					<td> QTY <br>
+						<input class="itemOne-minus" type="button" value="-" > 
+						<input class="itemOne-plus" type="button" value="+"> 
+						<h4><span id="itemOne-qty">1</span></h4>
+					</td>
+					<td><h3> $ <span id="itemOne-price">999.99</span></h3></td>
 
-			<div class="item2">
-					<img src="img/mac.png" alt="apple_computer">
-					QTY
-						<input class="minus" type="button" value="-"> 
-						<input class="plus" type="button" value="+">
-					
-			</div>
+				<tr>
+					<td><img src="img/mac.png" alt="apple_computer"></td>
+					<td>QTY <br>
+						<input class="itemTwo-minus" type="button" value="-"> 
+						<input class="itemTwo-plus" type="button" value="+">
+						<h4><span id="itemTwo-qty">1</span></h4>
+					</td>
+					<td><h3> $ <span id="itemTwo-price">1399.99</span> <h3></td>
+				</tr>
+			</table>
 	
-		</div>
 		<hr class="total-line">
-		<div class="total">
-			<h3>TOTAL : </h3>
+			<div class="total">
+			<h3>TOTAL : <span class="total-price"></span></h3>
 		</div>
+		</div>
+
 		
 	</div>
 	</div>
@@ -60,7 +46,7 @@
 	<footer>
 	</footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>

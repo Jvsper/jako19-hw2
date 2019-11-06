@@ -14,11 +14,17 @@ body {
     padding-right: 20px;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction : row;
+table {
+    table-layout: fixed;
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+tr, td {
+    /*border : 1px solid black; */
+}
 
 
 img {
