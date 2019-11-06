@@ -26,10 +26,10 @@ function displayPrices()
  $(".itemOne-minus").on("click", function(){
  	if(itemOnecount > 1){
  		$("#itemOne-qty").html(--itemOnecount);
- 		$("#itemOne-price").html(itemOne * itemOnecount.toFixed(2));
+ 		$("#itemOne-price").html((itemOne * itemOnecount).toFixed(2));
  		localStorage.setItem("itemOne-count", itemOnecount);
  	}
- 	$(".total-price").html(totalPrice);
+ 	$(".total-price").html(((itemOnecount * itemOne)+(itemTwocount * itemTwo)).toFixed(2));
 });
 
 
@@ -55,6 +55,11 @@ $(".itemTwo-plus").on("click", function(){
 	localStorage.setItem("itemTwo-count", itemTwocount);
 	$(".total-price").html(((itemOnecount * itemOne)+(itemTwocount * itemTwo)).toFixed(2));
 });
+
+ function displayComment()
+ {
+ 	$("#comment-section").html($("textarea").val());
+ }
 
 
 

@@ -33,18 +33,39 @@
 			</table>
 	
 		<hr class="total-line">
+			<div class="comment_container">
+				<div id="comment">
+					<h3>Leave us a comment!</h3>
+					<br>
+					<textarea width="500px" height="300px"></textarea>
+					<br>
+					<input type="submit" onclick="displayComment()">
+				</div>
+				<div class="comment-replay">
+					<p id="comment-section"></p>
+				</div>
+			</div>
+			
 			<div class="total">
 			<h3>TOTAL : $ <span class="total-price"></span></h3>
-		</div>
-		</div>
-
-		
-	</div>
+			</div>
+		</div>	
+		<button id="submit-button" onclick="order_complete.html">Place your order</button>
 	</div>
 	<hr>
 
 	<footer>
-	</footer>
+    
+            <div>
+            CST336 Internet Programming. 2019&copy; Jasper Kolp <br/>
+            <strong>Disclaimer: </strong>The information in this webpage is fictitious. <br/>
+            It is used for academic purpose only.
+            </div>
+
+            <figure>
+            	<img src="img/csumb.png" alt="csumb_logo">
+            </figure>
+    </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
